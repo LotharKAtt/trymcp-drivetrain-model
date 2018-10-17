@@ -1,0 +1,3 @@
+[submodule "cluster/system"]
+	path = cluster/system
+	url = https://github.com/Mirantis/reclass-system-salt-model
