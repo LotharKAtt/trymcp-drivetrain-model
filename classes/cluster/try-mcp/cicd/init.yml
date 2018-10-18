@@ -161,6 +161,7 @@ parameters:
     network:
       resolv:
         dns:
+        - 8.8.8.8
         - 10.0.2.3
         - 172.18.208.44
 
