@@ -22,7 +22,7 @@ parameters:
           sudo: true
     network:
       interface:
-        ens4:
+        ens3:
           enabled: true
           type: eth
           proto: static

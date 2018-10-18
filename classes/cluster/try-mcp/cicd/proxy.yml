@@ -27,6 +27,13 @@ parameters:
     server:
       enabled: true
       stream:
+        nginx_gerrit_ssh:
+          backend:
+            cicd:
+              address: 127.0.0.1
+              port: 29418
+          host:
+            port: 29418
         nginx_proxy_openldap:
           backend:
             openldap:

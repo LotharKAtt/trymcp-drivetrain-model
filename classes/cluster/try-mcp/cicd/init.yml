@@ -6,8 +6,8 @@ classes:
 - system.docker.swarm.stack.gerrit
 - system.docker.swarm.stack.jenkins
 - system.docker.swarm.stack.ldap
-- cluster.try-mcp.cicd.control.leader
 - cluster.try-mcp.cicd.control.manager
+- cluster.try-mcp.cicd.control.leader
 - cluster.try-mcp.cicd.proxy
 - cluster.try-mcp.infra
 parameters:
