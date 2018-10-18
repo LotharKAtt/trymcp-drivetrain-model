@@ -4,7 +4,7 @@ parameters:
   _param:
     linux_system_codename: xenial
     reclass_data_revision: master
-    single_address: 172.16.10.100
+    single_address: 127.0.0.1
   linux:
     system:
       name: cfg01
