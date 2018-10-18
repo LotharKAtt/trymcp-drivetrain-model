@@ -4,7 +4,8 @@ classes:
 - system.openssh.client.root
 - system.salt.master.pkg
 - system.salt.master.api
-- system.salt.minion.cert.proxy
+  # Temp disable
+  #- system.salt.minion.cert.proxy
 - system.salt.minion.ca.salt_master
 - system.reclass.storage.salt
 - system.sphinx.server.doc.reclass
