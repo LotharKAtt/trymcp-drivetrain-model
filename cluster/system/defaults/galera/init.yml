@@ -1,4 +1,0 @@
-parameters:
-  _param:
-    # SSL
-    galera_ssl_enabled: False

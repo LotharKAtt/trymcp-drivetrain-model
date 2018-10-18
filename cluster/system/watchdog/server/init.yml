@@ -1,7 +1,0 @@
-classes:
-- service.watchdog.server
-parameters:
-  watchdog:
-    server:
-      enabled: true
-

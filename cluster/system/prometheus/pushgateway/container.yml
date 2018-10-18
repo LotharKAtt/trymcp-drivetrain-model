@@ -1,3 +1,0 @@
-classes:
-- service.prometheus.pushgateway.container
-- system.prometheus.pushgateway

@@ -1,9 +1,0 @@
-parameters:
-  salt:
-    master:
-      environment:
-        prd:
-          formula:
-            panko:
-              source: pkg
-              name: salt-formula-panko

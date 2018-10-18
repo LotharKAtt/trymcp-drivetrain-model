@@ -1,2 +1,0 @@
-classes:
-  - service.kubernetes.control.roles.genie-pod-patch

@@ -1,4 +1,0 @@
-parameters:
-  _param:
-    # SSL
-    rabbitmq_ssl_enabled: False

@@ -1,7 +1,0 @@
-parameters:
-  apache:
-    server:
-      modules:
-        - proxy
-        - proxy_http
-        - headers

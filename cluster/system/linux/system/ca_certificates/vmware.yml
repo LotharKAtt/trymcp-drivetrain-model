@@ -1,5 +1,0 @@
-parameters:
-  linux:
-    system:
-      ca_certificates:
-        vcenter: ${_param:openstack_vcenter_cacert}

@@ -1,9 +1,0 @@
-parameters:
-  salt:
-    master:
-      environment:
-        prd:
-          formula:
-            openscap:
-              source: pkg
-              name: salt-formula-openscap

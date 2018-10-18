@@ -1,3 +1,0 @@
-classes:
-- service.dogtag.server.cluster
-- system.haproxy.proxy.listen.dogtag

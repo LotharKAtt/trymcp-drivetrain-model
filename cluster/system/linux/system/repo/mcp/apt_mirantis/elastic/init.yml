@@ -1,3 +1,0 @@
-classes:
-- system.linux.system.repo.mcp.apt_mirantis.elastic.es
-- system.linux.system.repo.mcp.apt_mirantis.elastic.es_curator

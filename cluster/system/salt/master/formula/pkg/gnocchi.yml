@@ -1,9 +1,0 @@
-parameters:
-  salt:
-    master:
-      environment:
-        prd:
-          formula:
-            gnocchi:
-              source: pkg
-              name: salt-formula-gnocchi

@@ -1,4 +1,0 @@
-parameters:
-  _param:
-    mysql_manila_ssl_option:
-      - SSL: True
