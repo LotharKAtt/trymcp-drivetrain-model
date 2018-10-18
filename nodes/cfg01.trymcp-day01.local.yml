@@ -1,5 +1,5 @@
 classes:
-- cluster.trymcp-day01.infra.config
+- cluster.trymcp-day.infra.config
 parameters:
   _param:
     linux_system_codename: xenial

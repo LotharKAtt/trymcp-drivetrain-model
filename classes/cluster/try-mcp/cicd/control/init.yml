@@ -26,7 +26,7 @@ parameters:
     cluster_node03_name: ${_param:single_address}
     cluster_vip_address: ${_param:single_address}
     control_vip_address: ${_param:single_address}
-    cluster_name: trymcp
+    cluster_name: try-mcp
     cluster_node01_address: ${_param:single_address}
 
     salt_api_password: HAf9hv57CrlLENuDGflUbw9uCCelGeva

@@ -7,8 +7,8 @@ classes:
 - system.salt.minion.ca.salt_master
 - system.reclass.storage.salt
 - system.sphinx.server.doc.reclass
-- cluster.trymcp.cicd.control.leader
-- cluster.trymcp
+- cluster.try-mcp.cicd.control.leader
+- cluster.try-mcp
 parameters:
   linux:
     network:
