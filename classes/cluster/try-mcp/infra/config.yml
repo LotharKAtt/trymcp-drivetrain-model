@@ -1,6 +1,7 @@
 classes:
 - system.linux.system.repo.mcp.apt_mirantis.saltstack
 - system.linux.system.repo.mcp.extra
+- system.openssh.client.root
 - system.salt.master.pkg
 - system.salt.master.api
 - system.salt.minion.cert.proxy
@@ -8,9 +9,17 @@ classes:
 - system.reclass.storage.salt
 - system.sphinx.server.doc.reclass
 - cluster.try-mcp.cicd.control.leader
-- cluster.try-mcp
 parameters:
   linux:
+    system:
+      user:
+        ubuntu:
+          email: ubuntu@localhost
+          enabled: true
+          full_name: ubuntu
+          home: /home/ubuntu
+          name: ubuntu
+          sudo: true
     network:
       interface:
         ens4:
