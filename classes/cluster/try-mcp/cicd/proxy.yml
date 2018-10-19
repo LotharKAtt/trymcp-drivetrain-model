@@ -1,11 +1,11 @@
 classes:
 - system.nginx.server.proxy.cicd.gerrit
 - system.nginx.server.proxy.cicd.jenkins
-  #- system.nginx.server.stream.gerrit_ssh
 - system.salt.minion.cert.proxy
+- system.salt.minion.cert.proxy.pki
 parameters:
   _param:
-    cluster_public_host: ${_param:single_address}
+    cluster_public_host: proxy
     nginx_proxy_gerrit_server_stream_host: ${_param:single_address}
     nginx_proxy_gerrit_server_proxy_host: 127.0.0.1
     nginx_proxy_gerrit_server_proxy_port: 18083

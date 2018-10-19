@@ -8,4 +8,4 @@ parameters:
   linux:
     system:
       name: cfg01
-      domain: trymcp-day01.local
+      domain: try-mcp.local
