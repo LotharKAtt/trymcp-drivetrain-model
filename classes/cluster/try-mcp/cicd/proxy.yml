@@ -31,7 +31,7 @@ parameters:
           backend:
             cicd:
               address: 127.0.0.1
-              port: 29418
+              port: 29417
           host:
             port: 29418
         nginx_proxy_openldap:
