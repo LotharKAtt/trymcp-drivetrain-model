@@ -3,9 +3,13 @@ classes:
 - system.linux.system.repo.mcp.extra
 - system.linux.system.single
 - service.docker.host
+- system.keycloak.server.single
 - system.docker.swarm.stack.gerrit
 - system.docker.swarm.stack.jenkins
 - system.docker.swarm.stack.ldap
+- system.docker.swarm.stack.operations_api
+- system.docker.swarm.stack.keycloak
+- system.docker.swarm.network.keycloak_backend
 - cluster.try-mcp.cicd.control.manager
 - cluster.try-mcp.cicd.control.leader
 - cluster.try-mcp.cicd.proxy
@@ -33,6 +37,17 @@ parameters:
     salt_api_password: HAf9hv57CrlLENuDGflUbw9uCCelGeva
 
     admin_email: root@localhost
+    # Keycloak
+    keycloak_drivetrain_bind_credential: password
+    keycloak_operations_api_client_secret: tvojemama5
+    haproxy_keycloak_proxy_bind_port: 8180
+    haproxy_keycloak_proxy_exposed_port: 18180
+    haproxy_keycloak_bind_port: 8080
+    haproxy_keycloak_exposed_port: 18086
+    haproxy_operations_api_bind_port: 8001
+    haproxy_operations_api_exposed_port: 8001
+    haproxy_cockroachdb_ui_bind_port: 8080
+    haproxy_cockroachdb_ui_exposed_port: 8888
 
     # CI/CD service databases
     mysql_admin_password: password
