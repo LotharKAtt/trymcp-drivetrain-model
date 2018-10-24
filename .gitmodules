@@ -1,3 +1,5 @@
 [submodule "classes/system"]
 	path = classes/system
 	url = https://github.com/LotharKAtt/reclass-system-salt-model
+    branch = trymcp
+
