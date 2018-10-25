@@ -5,7 +5,7 @@ classes:
 - service.docker.host
 - system.keycloak.server.single
 - system.docker.swarm.stack.gerrit
-- system.docker.swarm.stack.jenkins
+- system.docker.swarm.stack.jenkins.master
 - system.docker.swarm.stack.ldap
 - system.docker.swarm.stack.operations_api
 - system.docker.swarm.stack.keycloak
@@ -31,6 +31,8 @@ parameters:
     cluster_node01_name: ${_param:infra_config_hostname}
     cluster_vip_address: ${_param:single_address}
     control_vip_address: ${_param:single_address}
+    cicd_control_address: ${_param:single_address}
+
     cluster_name: try-mcp
     cluster_node01_address: ${_param:single_address}
 
