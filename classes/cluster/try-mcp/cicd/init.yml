@@ -14,7 +14,7 @@ classes:
 - cluster.try-mcp.cicd.control.manager
 - cluster.try-mcp.cicd.control.leader
 - cluster.try-mcp.cicd.proxy
-- cluster.try-mcp.cicd.jenkins_single
+- cluster.try-mcp.cicd.jenkins_slave
 - cluster.try-mcp.infra
 parameters:
   _param:
