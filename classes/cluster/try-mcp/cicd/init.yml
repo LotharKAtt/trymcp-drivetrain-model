@@ -49,6 +49,8 @@ parameters:
     haproxy_cockroachdb_ui_bind_port: 8080
     haproxy_cockroachdb_ui_exposed_port: 8888
 
+    #Operation API
+    operations_api_flask_secret_key: tvojemamaneumireclass4
     # CI/CD service databases
     mysql_admin_password: password
     mysql_gerrit_password: password
