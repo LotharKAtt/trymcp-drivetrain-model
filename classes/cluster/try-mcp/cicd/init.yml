@@ -10,9 +10,11 @@ classes:
 - system.docker.swarm.stack.operations_api
 - system.docker.swarm.stack.keycloak
 - system.docker.swarm.network.keycloak_backend
+- system.docker.swarm.network.operations_api_backend
 - cluster.try-mcp.cicd.control.manager
 - cluster.try-mcp.cicd.control.leader
 - cluster.try-mcp.cicd.proxy
+- cluster.try-mcp.cicd.jenkins_single
 - cluster.try-mcp.infra
 parameters:
   _param:
@@ -26,9 +28,7 @@ parameters:
     docker_image_openldap: ${_param:mcp_docker_registry}/mirantis/external/openldap:${_param:apt_mk_version}
     docker_image_phpldapadmin: ${_param:mcp_docker_registry}/mirantis/cicd/phpldapadmin:${_param:apt_mk_version}
 
-    cluster_node01_name: ${_param:single_address}
-    cluster_node02_name: ${_param:single_address}
-    cluster_node03_name: ${_param:single_address}
+    cluster_node01_name: ${_param:infra_config_hostname}
     cluster_vip_address: ${_param:single_address}
     control_vip_address: ${_param:single_address}
     cluster_name: try-mcp
