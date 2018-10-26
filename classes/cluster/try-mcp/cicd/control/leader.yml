@@ -13,8 +13,8 @@ classes:
 - system.jenkins.client.security.matrix
 # ..jobs
 - system.jenkins.client.job.git-mirrors.downstream.pipelines
-- system.jenkins.client.job.deploy.update.package
-- system.jenkins.client.job.deploy.update.config
+- system.jenkins.client.job.salt-models.generate
+- system.jenkins.client.job.deploy.openstack
 # Gerrit
 - system.gerrit.client
 - system.gerrit.client.project.ci

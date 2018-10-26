@@ -11,6 +11,11 @@ classes:
 - system.sphinx.server.doc.reclass
 - cluster.try-mcp.cicd
 parameters:
+  salt:
+    master:
+      reactor:
+        reclass/minion/classify:
+        - salt://reclass/reactor/node_register.sls
   linux:
     system:
       user:
@@ -21,14 +26,6 @@ parameters:
           home: /home/ubuntu
           name: ubuntu
           sudo: true
-          #    network:
-          #      interface:
-          #        ens3:
-          #          enabled: true
-          #          type: eth
-          #          proto: static
-          #          address: ${_param:single_address}
-          #          netmask: 255.255.255.0
   reclass:
     storage:
       class_mapping:

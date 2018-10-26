@@ -50,7 +50,8 @@ parameters:
     haproxy_operations_api_exposed_port: 8001
     haproxy_cockroachdb_ui_bind_port: 8080
     haproxy_cockroachdb_ui_exposed_port: 8889
-
+    haproxy_operations_ui_exposed_port: 3000
+    haproxy_operations_ui_bind_port: 3000
     #Operation API
     operations_api_flask_secret_key: tvojemamaneumireclass4
     # CI/CD service databases
