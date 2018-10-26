@@ -48,3 +48,43 @@ parameters:
               port: 1636
           host:
             port: 636
+      site:
+        nginx_proxy_operation-ui:
+          enabled: true
+          type: nginx_proxy
+          name: operationsapi
+          proxy:
+            host: 127.0.0.1
+            port: 3000
+            protocol: http
+          host:
+            name: ${_param:single_address}
+            port: 3020
+            protocol: https
+          ssl: ${_param:nginx_proxy_ssl}
+        nginx_proxy_keycloak-server:
+          enabled: true
+          type: nginx_proxy
+          name: keycloak
+          proxy:
+            host: 127.0.0.1
+            port: 18086
+            protocol: http
+          host:
+            name: ${_param:single_address}
+            protocol: https
+            port: 8078
+          ssl: ${_param:nginx_proxy_ssl}
+        nginx_proxy_operation-api:
+          enabled: true
+          type: nginx_proxy
+          name: operations-api
+          proxy:
+            host: 127.0.0.1
+            port: 8001
+            protocol: http
+          host:
+            name: ${_param:single_address}
+            port: 8002
+            protocol: https
+          ssl: ${_param:nginx_proxy_ssl}

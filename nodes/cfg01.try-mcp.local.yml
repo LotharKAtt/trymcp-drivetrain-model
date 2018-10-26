@@ -5,6 +5,7 @@ parameters:
     linux_system_codename: xenial
     reclass_data_revision: master
     single_address: 127.0.0.1
+    cluster_public_host: 127.0.0.1
   linux:
     system:
       name: cfg01
