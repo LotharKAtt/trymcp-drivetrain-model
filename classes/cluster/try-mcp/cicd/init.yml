@@ -155,7 +155,7 @@ parameters:
           service:
             server:
               environment:
-                DB_PORT_3306_TCP_ADDR: gerrit_db
+                DB_PORT_3306_TCP_ADDR: ${_param:single_address}
     host:
       pkgs:
         - docker-ce
