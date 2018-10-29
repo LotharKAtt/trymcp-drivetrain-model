@@ -58,8 +58,9 @@ parameters:
     mysql_admin_password: password
     mysql_gerrit_password: password
 
-    gerrit_ssh_bind_port: 8088
     gerrit_bind_port: 8081
+    gerrit_db_publish_port: 3306
+    gerrit_ssh_bind_port: 8088
 
     # OpenLDAP
     openldap_organisation: ${_param:cluster_name}
