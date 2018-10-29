@@ -55,6 +55,7 @@ parameters:
     haproxy_operations_ui_bind_port: 3000
     #Operation API
     operations_api_flask_secret_key: tvojemamaneumireclass4
+    operations_api_jenkins_password: password
     # CI/CD service databases
     mysql_admin_password: password
     mysql_gerrit_password: password
