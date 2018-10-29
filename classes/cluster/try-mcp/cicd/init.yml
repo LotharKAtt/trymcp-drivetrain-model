@@ -16,6 +16,7 @@ classes:
 - cluster.try-mcp.cicd.proxy
 - cluster.try-mcp.cicd.jenkins_slave
 - cluster.try-mcp.infra
+- cluster.try-mcp.overrides
 parameters:
   _param:
     apt_mk_version: '2018.8.0'
@@ -152,6 +153,12 @@ parameters:
   docker:
     client:
       stack:
+        operations_api:
+          service:
+            operations-ui:
+              environment:
+                REACT_APP_OPERATIONS_API_URL: 'http://${_param:node01_external_address}:${_param:haproxy_operations_api_bind_port}'
+                REACT_APP_KEYCLOAK_AUTH_URL: 'http://${_param:node01_external_address}:8078/auth'
         gerrit:
           service:
             server:
