@@ -16,21 +16,6 @@ parameters:
       reactor:
         reclass/minion/classify:
         - salt://reclass/reactor/node_register.sls
-  linux:
-    system:
-      user:
-        jenkins_master:
-          enabled: true
-          name: jenkins_master
-          home: /nonexistent
-          sudo: false
-          uid: 1000
-        jenkins_slave:
-          enabled: true
-          name: jenkins_slave
-          home: /var/lib/jenkins
-          sudo: false
-          uid: 10000
   reclass:
     storage:
       class_mapping:
