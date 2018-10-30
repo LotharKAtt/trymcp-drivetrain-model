@@ -19,13 +19,12 @@ parameters:
   linux:
     system:
       user:
-        ubuntu:
-          email: ubuntu@localhost
+        jenkins:
           enabled: true
-          full_name: ubuntu
-          home: /home/ubuntu
-          name: ubuntu
-          sudo: true
+          name: jenkins
+          home: /var/lib/jenkins
+          sudo: false
+          uid: 10000
   reclass:
     storage:
       class_mapping:

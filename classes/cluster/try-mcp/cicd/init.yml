@@ -180,8 +180,8 @@ parameters:
           mode: 755
           makedirs: true
         /srv/volumes/jenkins:
-          user: ubuntu
-          group: ubuntu
+          user: jenkins
+          group: jenkins
           mode: 755
           makedirs: true
       package:
