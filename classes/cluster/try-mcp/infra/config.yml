@@ -19,9 +19,15 @@ parameters:
   linux:
     system:
       user:
-        jenkins:
+        jenkins_master:
           enabled: true
-          name: jenkins
+          name: jenkins_master
+          home: /nonexistent
+          sudo: false
+          uid: 1000
+        jenkins_slave:
+          enabled: true
+          name: jenkins_slave
           home: /var/lib/jenkins
           sudo: false
           uid: 10000
