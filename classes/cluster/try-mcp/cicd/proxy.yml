@@ -48,6 +48,13 @@ parameters:
               port: 1636
           host:
             port: 636
+        nginx_jenkins_slave:
+          backend:
+            cicd:
+              address: 127.0.0.1
+              port: 50001
+          host:
+            port: 50000
       site:
         nginx_proxy_operation-ui:
           enabled: true
