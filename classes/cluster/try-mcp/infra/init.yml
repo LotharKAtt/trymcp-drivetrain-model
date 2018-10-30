@@ -1,5 +1,6 @@
 parameters:
   _param:
+    cluster_public_host: ${_param:single_address}
     cluster_domain: try-mcp.local
     cluster_name: try-mcp
     salt_minion_ca_authority: salt_master_ca

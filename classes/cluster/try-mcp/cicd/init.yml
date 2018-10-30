@@ -158,8 +158,8 @@ parameters:
           service:
             operations-ui:
               environment:
-                REACT_APP_OPERATIONS_API_URL: 'http://${_param:node01_external_address}:${_param:haproxy_operations_api_bind_port}'
-                REACT_APP_KEYCLOAK_AUTH_URL: 'http://${_param:node01_external_address}:8078/auth'
+                REACT_APP_OPERATIONS_API_URL: 'http://${_param:cluster_public_host}:${_param:haproxy_operations_api_bind_port}'
+                REACT_APP_KEYCLOAK_AUTH_URL: 'http://${_param:cluster_public_host}:8078/auth'
         gerrit:
           service:
             server:
