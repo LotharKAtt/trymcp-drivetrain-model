@@ -37,8 +37,6 @@ parameters:
     cluster_name: try-mcp
     cluster_node01_address: ${_param:single_address}
 
-    salt_api_password: HAf9hv57CrlLENuDGflUbw9uCCelGeva
-
     admin_email: root@localhost
     # Keycloak
     keycloak_drivetrain_bind_credential: password
