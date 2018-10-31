@@ -135,6 +135,8 @@ parameters:
     # XXX: doesn't work for some unknown reason
 #   jenkins_security_ldap_user_search_base: ou=people,${_param:openldap_dn}
 #   jenkins_security_ldap_group_search_base: ou=groups,${_param:openldap_dn}
+    jenkins_security_matrix_read:
+      - anonymous
     # Jobs params
     jenkins_gerrit_url: ssh://admin@${_param:single_address}:${_param:gerrit_ssh_bind_port}
     # Gerrit
@@ -169,6 +171,13 @@ parameters:
         - python-docker
       insecure_registries:
         - ${_param:mcp_docker_registry}
+  jenkins:
+    client:
+      job_template:
+        generate-salt-model:
+          template:
+            scm:
+              credentials: "gerrit"
   linux:
     system:
       directory:
