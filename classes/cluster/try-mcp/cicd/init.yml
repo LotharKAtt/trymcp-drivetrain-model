@@ -138,6 +138,8 @@ parameters:
 #   jenkins_security_ldap_group_search_base: ou=groups,${_param:openldap_dn}
     jenkins_security_matrix_read:
       - anonymous
+    # Tyring to fix https://issues.jenkins-ci.org/browse/JENKINS-52922 faced during deploy_trymcp job run
+    jenkins_master_extra_opts: "-Dhudson.slaves.ChannelPinger.pingIntervalSeconds=100 -Dhudson.slaves.ChannelPinger.pingTimeoutSeconds=100"
     # Jobs params
     jenkins_gerrit_url: ssh://admin@${_param:single_address}:${_param:gerrit_ssh_bind_port}
     # Gerrit
@@ -152,6 +154,9 @@ parameters:
     gerrit_admin_public_key: ${_param:jenkins_admin_public_key}
     gerrit_admin_private_key: ${_param:jenkins_admin_private_key}
     gerrit_admin_password: password
+
+    #FIXME: Authentication doesn't properly work yet, so temporary use image version with auth disabled
+    docker_image_operations_api: mirantis/python-operations-api:comment-auth
   docker:
     client:
       stack:
