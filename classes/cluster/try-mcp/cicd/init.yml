@@ -2,6 +2,7 @@ classes:
 - system.linux.system.repo.docker
 - system.linux.system.repo.mcp.extra
 - system.linux.system.single
+- system.openssh.client.lab
 - service.docker.host
 - system.keycloak.server.single
 - system.docker.swarm.stack.gerrit

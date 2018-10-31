@@ -8,6 +8,7 @@ classes:
 # ..credentials
 - system.jenkins.client.credential.gerrit
 - system.jenkins.client.credential.salt
+- system.jenkins.client.credential.lab
 # ..security
 - system.jenkins.client.security.ldap
 - system.jenkins.client.security.matrix
