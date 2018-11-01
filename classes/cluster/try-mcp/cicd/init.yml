@@ -26,7 +26,9 @@ parameters:
     docker_image_gerrit: ${_param:mcp_docker_registry}/mirantis/cicd/gerrit:${_param:apt_mk_version}
     docker_image_mysql: ${_param:mcp_docker_registry}/mirantis/cicd/mysql:${_param:apt_mk_version}
     docker_image_jenkins: ${_param:mcp_docker_registry}/mirantis/cicd/jenkins:${_param:apt_mk_version}
-    docker_image_jenkins_slave: ${_param:mcp_docker_registry}/mirantis/cicd/jnlp-slave:${_param:apt_mk_version}
+    # FIXME: workaround for missing packages in jenkins slave image
+    #docker_image_jenkins_slave: ${_param:mcp_docker_registry}/mirantis/cicd/jnlp-slave:${_param:apt_mk_version}
+    docker_image_jenkins_slave: quay.io/lotharkatt/jenkins-slave:latest
     docker_image_openldap: ${_param:mcp_docker_registry}/mirantis/external/openldap:${_param:apt_mk_version}
     docker_image_phpldapadmin: ${_param:mcp_docker_registry}/mirantis/cicd/phpldapadmin:${_param:apt_mk_version}
 
